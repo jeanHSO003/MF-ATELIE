@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fio & Ponto — Crochê feito à mão</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== TOPO ===================== -->
+<header class="topo">
+    <div class="topo-conteudo">
+        <a href="#hero" class="marca">
+            <span class="novelo" id="logoLoja">
+                <svg viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" fill="#D89AA9"/>
+                    <path d="M20 4 C 26 10, 26 30, 20 36 C 14 30, 14 10, 20 4 Z" fill="#6B2D5C" opacity=".55"/>
+                    <path d="M4 20 C 10 14, 30 14, 36 20 C 30 26, 10 26, 4 20 Z" fill="#E3A857" opacity=".55"/>
+                </svg>
+            </span>
+            <span data-loja-nome>Fio & Ponto</span>
+        </a>
+        <div class="topo-conta" id="areaConta">
+            <a href="login.html" class="link-sair" id="linkEntrar">Entrar</a>
+            <a href="cadastro.html" class="btn btn-outline btn-small" id="linkCadastrar">Cadastrar</a>
+        </div>
+        <a href="#como-encomendar" class="btn btn-primary btn-small">
+            <i class="fa-brands fa-whatsapp"></i> Encomendar
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="section hero">
+        <div class="container hero-grid">
+            <div class="hero-texto">
+                <span class="eyebrow">feito à mão, ponto a ponto</span>
+                <h1 data-loja-frase>Peças de crochê feitas à mão, com carinho em cada ponto.</h1>
+                <p>Amigurumis, bolsas, tapetes e presentes personalizados — cada peça é única, exatamente como o pedido de quem a encomenda.</p>
+                <div class="hero-acoes">
+                    <a href="#galeria" class="btn btn-primary">
+                        <i class="fa-solid fa-images"></i> Ver as peças
+                    </a>
+                    <a href="#como-encomendar" class="btn btn-outline">
+                        Como encomendar
+                    </a>
+                </div>
+            </div>
+            <div class="amostra-wrap">
+                <div class="granny" title="Amostra de crochê"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ponto-divisor">
+        <svg viewBox="0 0 400 34" preserveAspectRatio="xMidYMid meet">
+            <path d="M0 17 Q 12.5 0, 25 17 T 50 17 T 75 17 T 100 17 T 125 17 T 150 17 T 175 17 T 200 17 T 225 17 T 250 17 T 275 17 T 300 17 T 325 17 T 350 17 T 375 17 T 400 17"
+                  fill="none" stroke="#D89AA9" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- ===================== SOBRE A CROCHETEIRA ===================== -->
+    <section id="sobre" class="section sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-foto" id="fotoPerfil">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="sobre-texto">
+                <span class="eyebrow">quem faz</span>
+                <h2>Sobre a artesã</h2>
+                <p data-loja-bio>Oi, eu sou a Marcela! Há 6 anos transformo novelos de linha em peças únicas.</p>
+                <blockquote>"Cada ponto é feito pensando em quem vai receber." <span class="assinatura">— com carinho</span></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="ponto-divisor">
+        <svg viewBox="0 0 400 34" preserveAspectRatio="xMidYMid meet">
+            <path d="M0 17 Q 12.5 34, 25 17 T 50 17 T 75 17 T 100 17 T 125 17 T 150 17 T 175 17 T 200 17 T 225 17 T 250 17 T 275 17 T 300 17 T 325 17 T 350 17 T 375 17 T 400 17"
+                  fill="none" stroke="#8A9A5B" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- ===================== GALERIA / PRODUTOS ===================== -->
+    <section id="galeria" class="section galeria" style="background:var(--creme-2);">
+        <div class="container">
+            <div class="section-titulo">
+                <span class="eyebrow">vitrine</span>
+                <h2>Peças disponíveis</h2>
+                <p>Toque em "Encomendar" para chamar no WhatsApp com a peça já selecionada.</p>
+            </div>
+            <div class="galeria-grid" id="galeria-produtos">
+                <!-- preenchido via js/site.js -->
+            </div>
+        </div>
+    </section>
+
+    <div class="ponto-divisor">
+        <svg viewBox="0 0 400 34" preserveAspectRatio="xMidYMid meet">
+            <path d="M0 17 Q 12.5 0, 25 17 T 50 17 T 75 17 T 100 17 T 125 17 T 150 17 T 175 17 T 200 17 T 225 17 T 250 17 T 275 17 T 300 17 T 325 17 T 350 17 T 375 17 T 400 17"
+                  fill="none" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- ===================== COMO ENCOMENDAR ===================== -->
+    <section id="como-encomendar" class="section">
+        <div class="container">
+            <div class="section-titulo">
+                <span class="eyebrow">o passo a passo</span>
+                <h2>Como encomendar</h2>
+                <p>É simples, rápido e todo combinado direto com a artesã.</p>
+            </div>
+
+            <div class="passos">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <h3>Escolha a peça</h3>
+                    <p>Veja a galeria acima e escolha o modelo, a cor e o tamanho que combinam com você.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <h3>Chame no WhatsApp</h3>
+                    <p>Toque em "Encomendar" e a mensagem já vai com o nome da peça escolhida.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <h3>Combine prazo e entrega</h3>
+                    <p>A artesã confirma o valor, o prazo de produção e a forma de entrega com você.</p>
+                </div>
+            </div>
+
+            <div class="cta-final">
+                <h3>Pronta para encomendar sua peça?</h3>
+                <p>Fale agora mesmo direto com a artesã pelo WhatsApp.</p>
+                <a href="#" data-whats-geral target="_blank" rel="noopener" class="btn btn-whats">
+                    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="ponto-divisor">
+        <svg viewBox="0 0 400 34" preserveAspectRatio="xMidYMid meet">
+            <path d="M0 17 Q 12.5 34, 25 17 T 50 17 T 75 17 T 100 17 T 125 17 T 150 17 T 175 17 T 200 17 T 225 17 T 250 17 T 275 17 T 300 17 T 325 17 T 350 17 T 375 17 T 400 17"
+                  fill="none" stroke="#6B2D5C" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="section" style="background:var(--creme-2);">
+        <div class="container">
+            <div class="section-titulo">
+                <span class="eyebrow">quem já encomendou</span>
+                <h2>Depoimentos</h2>
+            </div>
+            <div class="depo-grid">
+                <div class="depo-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"Encomendei um amigurumi para o aniversário da minha filha e ficou perfeito, idêntico à foto que mandei."</p>
+                    <div class="depo-nome">Juliana R.</div>
+                </div>
+                <div class="depo-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"A bolsa de crochê é linda e muito bem feita. Recebi antes do prazo combinado!"</p>
+                    <div class="depo-nome">Camila S.</div>
+                </div>
+                <div class="depo-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"Atendimento super atencioso, ela tira todas as dúvidas antes de fechar o pedido."</p>
+                    <div class="depo-nome">Renata A.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTATO / RODAPÉ ===================== -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Vamos conversar?</h2>
+            <div class="contato-grid" style="margin-top:24px;">
+                <div class="contato-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <a href="#" data-whats-geral target="_blank" rel="noopener">Chamar para encomendar</a>
+                    </div>
+                </div>
+                <div class="contato-item">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <a data-loja-instagram href="#" target="_blank" rel="noopener">@fioeponto.croche</a>
+                    </div>
+                </div>
+                <div class="contato-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Atendimento</h4>
+                        <p data-loja-horario>Seg. a sáb., 9h às 18h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape-linha">
+                <span><span data-loja-nome>Fio & Ponto</span> · <span data-loja-cidade>Santa Bárbara d'Oeste, SP</span></span>
+                <a href="login.html">Área da crocheteira →</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Botão flutuante fixo, sempre visível ao rolar (ótimo para celular) -->
+<a href="#" data-whats-geral target="_blank" rel="noopener" class="fab-whats" title="Chamar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/store.js"></script>
+<script src="js/site.js"></script>
+<script src="js/conta.js"></script>
+</body>
+</html>
